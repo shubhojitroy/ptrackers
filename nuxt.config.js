@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'WAM Global Share Offer',
+    title: 'PM Capital Go 2025',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,7 +15,6 @@ module.exports = {
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: 'favicon.ico' },
-
     ]
 
   },

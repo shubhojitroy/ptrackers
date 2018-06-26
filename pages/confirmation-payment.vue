@@ -81,14 +81,14 @@
         <div class="space"></div>
         <div class="field is-grouped">
           <div class="control">
-              <nuxt-link to="" class="button is-primary is-outlined" @click="Print()">
+              <button class="button is-primary is-outlined" @click="print">
                   Print
-              </nuxt-link>
+              </button>
           </div>
           <div class="control">
-              <nuxt-link to="/" class="button is-primary" @click="Close()">
+              <button class="button is-primary" @click="close">
                   close
-              </nuxt-link>
+              </button>
           </div>
         </div>
        </section>
@@ -109,14 +109,13 @@
     computed: {
       ...mapGetters(['investor']),
     },
-    created: function () {
-      window.addEventListener('beforeunload', function (event) {
-        socket.log('leaving', this.$route) // logs to my logger
-      }, false)
-    },
     methods: {
       print() {
 
+      },
+      close() {
+        window.close();
+        return false;
       },
     },
   }
