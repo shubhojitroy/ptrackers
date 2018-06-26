@@ -109,11 +109,13 @@
     computed: {
       ...mapGetters(['investor']),
     },
+    created: function () {
+      window.addEventListener('beforeunload', function (event) {
+        socket.log('leaving', this.$route) // logs to my logger
+      }, false)
+    },
     methods: {
       print() {
-
-      },
-      close() {
 
       },
     },

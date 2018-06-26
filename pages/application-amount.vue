@@ -145,12 +145,12 @@
 
           <div class="space"></div>
           <div class="field is-grouped">
-            <div class="control">            
+            <div class="control">
                 <nuxt-link to="/" class="button is-primary is-outlined">
                     exit
-                </nuxt-link> 
+                </nuxt-link>
             </div>
-            <div class="control">                        
+            <div class="control">
                 <nuxt-link to="/confirmation-payment" class="button is-primary">
                     submit
                 </nuxt-link>
@@ -164,7 +164,17 @@
 </template>
 
 <script>
-export default {};
+import { mapGetters } from 'vuex';
+
+export default {
+  data() {
+    return {
+    };
+  },
+  computed: {
+    ...mapGetters(['investor']),
+  },
+}
 </script>
 
 <style scoped>
