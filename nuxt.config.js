@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'PM Capital Go 2025',
+    title: 'PTrackERS Offer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,6 +15,7 @@ module.exports = {
     ],
     link: [
       { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: 'favicon.ico' },
+
     ]
 
   },

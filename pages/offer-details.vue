@@ -4,7 +4,7 @@
       <section class="canvas">
         <br><br>
         <div class="container">
-          <b-tabs type="is-boxed" v-model="activeTab">
+          <b-tabs type="is-boxed" position="is-centered" v-model="activeTab">
               <b-tab-item label="Welcome">
                   <welcome-letter></welcome-letter>
               </b-tab-item>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="control">
                         <nuxt-link to="/important-notification" class="button is-primary">
-                            continue
+                            continue&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-skip-next-circle-outline"></i></span>
                         </nuxt-link>
                     </div>
                 </div>
@@ -100,6 +100,5 @@
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
   border-radius: 0.25rem;
   padding: 1.0rem;
-
 }
 </style>

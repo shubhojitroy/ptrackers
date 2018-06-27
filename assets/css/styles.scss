@@ -6,6 +6,7 @@
 $brand-color-1: #4A67AB;
 
 $primary: $brand-color-1;
+$button-background-color: #2d495c;
 
 $family-primary: 'Raleway', $family-sans-serif;
 
@@ -33,11 +34,14 @@ html {
   padding-left: .75rem;
 }
 .control a.button {
-  width: 100px;
+  width: 120px;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 .button {
   text-transform: uppercase;
+}
+.button.is-primary  {
+  background-color: $button-background-color;
 }

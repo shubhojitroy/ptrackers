@@ -32,12 +32,12 @@
         <div class="field is-grouped">
           <div class="control">
               <nuxt-link to="/priority-access" class="button is-primary is-outlined">
-                  previous
+                  <span class="icon"><i class="mdi mdi-skip-backward"></i></span>&nbsp;previous
               </nuxt-link>
           </div>
           <div class="control">
-              <nuxt-link to="/application-amount" class="button is-primary">
-                  next
+              <nuxt-link to="/application" class="button is-primary">
+                  next&nbsp;<span class="icon"><i class="mdi mdi-skip-forward"></i></span>
               </nuxt-link>
           </div>
         </div>
@@ -46,6 +46,7 @@
     </div>
   </div>
 </template>
+
 
 
 <script>

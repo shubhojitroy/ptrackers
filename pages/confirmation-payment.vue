@@ -81,14 +81,14 @@
         <div class="space"></div>
         <div class="field is-grouped">
           <div class="control">
-              <button class="button is-primary is-outlined" @click="print">
-                  Print
-              </button>
+              <nuxt-link to="" class="button is-primary is-outlined" @click="Print()">
+                  Print&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-printer-alert"></i></span>
+              </nuxt-link>
           </div>
           <div class="control">
-              <button class="button is-primary" @click="close">
-                  close
-              </button>
+              <nuxt-link to="/end-page" class="button is-primary" @click="Close()">
+                  close&nbsp;&nbsp;<span class="icon"><i class="mdi mdi-ray-end"></i></span>
+              </nuxt-link>
           </div>
         </div>
        </section>
@@ -114,8 +114,7 @@
 
       },
       close() {
-        window.close();
-        return false;
+
       },
     },
   }
